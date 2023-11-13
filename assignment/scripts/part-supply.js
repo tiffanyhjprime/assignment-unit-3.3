@@ -54,19 +54,19 @@ for (let i in supplyChanges){
   const sortedNumbers = supplyChanges[i];
   if( sortedNumbers > 0 ){
     positives.push( sortedNumbers );
-    console.log( 'The positive numbers are: ', positives );
   }
 
   else if( sortedNumbers < 0 ){
     negatives.push( sortedNumbers );
-    console.log( 'The negative numbers are: ', negatives );
   }
   
   else if( sortedNumbers === 0 ){
     zeroes.push( sortedNumbers );
-    console.log( 'The zeroes are: ', zeroes );
   }
 }
+console.log( 'The positive numbers are: ', positives );
+console.log( 'The negative numbers are: ', negatives );
+console.log( 'The zeroes are: ', zeroes );
 
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',

@@ -54,17 +54,17 @@ for (let i in supplyChanges){
   const sortedNumbers = supplyChanges[i];
   if( sortedNumbers > 0 ){
     positives.push( sortedNumbers );
-    console.log( positives );
+    console.log( 'The positive numbers are: ', positives );
   }
 
   else if( sortedNumbers < 0 ){
     negatives.push( sortedNumbers );
-    console.log( negatives );
+    console.log( 'The negative numbers are: ', negatives );
   }
   
   else if( sortedNumbers === 0 ){
     zeroes.push( sortedNumbers );
-    console.log( zeroes );
+    console.log( 'The zeroes are: ', zeroes );
   }
 }
 

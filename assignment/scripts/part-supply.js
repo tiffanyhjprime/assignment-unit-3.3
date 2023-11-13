@@ -50,14 +50,20 @@ let positives = [];
 let negatives = [];
 let zeroes = [];
 
-for (i in supplyChanges ){
-  if( supplyChanges [i] > 0 ){
+for (let i in supplyChanges){
+  const sortedNumbers = supplyChanges[i];
+  if( sortedNumbers > 0 ){
+    positives.push( sortedNumbers );
     console.log( positives );
   }
-  else if( supplyChanges [i] < 0 ){
+
+  else if( sortedNumbers < 0 ){
+    negatives.push( sortedNumbers );
     console.log( negatives );
   }
-  else if( supplyChanges [i] === 0 ){
+  
+  else if( sortedNumbers === 0 ){
+    zeroes.push( sortedNumbers );
     console.log( zeroes );
   }
 }
